@@ -1,0 +1,121 @@
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #E6ECED;
+  display: grid;
+  grid-template-columns: auto minmax(300px, 1000px) auto;
+}
+
+/* -----HEADER------------------ */
+.site-header{
+  grid-column: 2 / 3;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: minmax(150px, 3fr) minmax(150px,4fr);
+  grid-template-rows: 100vh;
+  text-align: center;
+  line-height: 3.5rem;
+}
+.site-header_title-wrapper{
+  background-color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.site-header_title{
+  font-size: 3rem;
+}
+
+.site-header_subtitle{
+  color: #9c9f9f;
+  font-size: 1.4rem;
+}
+
+.site-header_nav-link,
+.site-header_nav-link:link,
+.site-header_nav-link:visited,
+.site-header_nav-link:hover,
+.site-header_nav-link:active{
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #565858;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #9c9f9f;
+}
+
+
+.site-header_image_wrapper{
+  background-image: url('../img/camera.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+/* -----MAIN------------------ */
+
+.site-main{
+  grid-column: 2 / 3;
+  background-color: lightgray;
+  display: grid;
+}
+
+.site-main_title-wrapper{
+  background-color: #4c4e4d;
+  color: #fff;
+  text-align: center;
+}
+.site-main_title{
+  display: inline;
+  padding: 1px 15px;
+  border-left: 1px dotted white;
+  border-right: 1px dotted white;
+  line-height: 7rem;
+}
+
+.site-main_section{
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr);
+
+}
+.site-main_image{
+  max-width: 100%;
+}
+.site-main_content{
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  line-height: 2rem;
+}
+
+.site-main_section-title{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* -----FOOTER--------------- */
+
+.site-footer{
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.site-footer_title{
+  font-size: 3rem;
+  padding: 80px 0px 20px 0px;
+  text-transform: capitalize;
+}
+.site-footer_details{
+  line-height: 2rem;
+}
+
+.site-footer_bottom{
+  padding-bottom: 60px;
+}
